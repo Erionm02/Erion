@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Furra Arti – Mitrovicë</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@600;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <nav>
+    <a href="#ballina" data-i18n="nHome"></a>
+    <a href="#menuja" data-i18n="nMenu"></a>
+    <a href="#rreth" data-i18n="nAbout"></a>
+    <a href="#kontakti" data-i18n="nContact"></a>
+  </nav>
+  <div class="lang">
+    <button data-lang="sq">Shqip</button>
+    <button data-lang="en">English</button>
+  </div>
+</header>
+
+<!-- pikat anash për slide-at -->
+<div class="dots"><a href="#ballina"></a><a href="#menuja"></a><a href="#rreth"></a><a href="#kontakti"></a></div>
+
+<main>
+  <!-- SLIDE 1: BALLINA -->
+  <section id="ballina" class="slide hero" data-anim="hero">
+    <div class="floaters" id="floaters"></div>
+    <div class="stage" id="stage">
+      <svg class="hat" viewBox="0 0 120 80" aria-hidden="true">
+        <path d="M25 70h70v-12c14-3 22-14 20-26-3-14-20-20-32-12C76 12 66 6 58 8c-10-4-22 2-26 10C18 14 4 24 6 38c2 10 10 18 19 20z" fill="#f6ead2"/>
+        <rect x="25" y="58" width="70" height="14" rx="3" fill="#e9d6b0"/>
+      </svg>
+      <div class="logo3d" id="logo3d" aria-label="Furrë Bukë Arti">
+        <div class="line small">Furrë Bukë</div>
+        <div class="line big">Arti</div>
+        <div class="line tag">Furra &amp; Pizzeria</div>
+      </div>
+      <div class="pin"></div>
+      <p class="status"><span class="dot" id="dot"></span><span id="status"></span></p>
+      <p class="count" id="count"></p>
+    </div>
+    <div class="scroll-hint"><span></span></div>
+  </section>
+
+  <!-- SLIDE 2: MENUJA -->
+  <section id="menuja" class="slide" data-anim="flip">
+    <div class="wrap">
+      <h2 class="rv" data-i18n="nMenu"></h2>
+      <div class="tabs rv" style="--d:.1s">
+        <button class="tab active" data-tab="food" data-i18n="tabFood"></button>
+        <button class="tab" data-tab="drink" data-i18n="tabDrink"></button>
+      </div>
+      <div class="list" id="list"></div>
+    </div>
+  </section>
+
+  <!-- SLIDE 3: RRETH NESH -->
+  <section id="rreth" class="slide" data-anim="rise">
+    <div class="wrap about">
+      <div>
+        <h2 class="rv" data-i18n="nAbout"></h2>
+        <p class="lead rv" style="--d:.2s" data-i18n="aboutText"></p>
+      </div>
+      <div class="hours rv" style="--d:.35s">
+        <h3 data-i18n="hoursTitle"></h3>
+        <ul id="hours"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 4: KONTAKTI -->
+  <section id="kontakti" class="slide" data-anim="zoom">
+    <div class="wrap contact">
+      <div class="info">
+        <h2 class="rv" data-i18n="nContact"></h2>
+        <p class="lead rv" style="--d:.15s" data-i18n="address"></p>
+        <a class="phone rv" style="--d:.3s" href="tel:+38349840341">+383 49 840 341</a>
+        <div class="buttons rv" style="--d:.45s">
+          <a class="btn primary" href="tel:+38349840341" data-i18n="bCall"></a>
+          <a class="btn outline" target="_blank" rel="noopener" data-i18n="bRoute"
+             href="https://www.google.com/maps/dir/?api=1&destination=Furra+Arti+Rruga+Ulqinit+Zhabar+Mitrovice+Kosovo"></a>
+        </div>
+      </div>
+      <div class="map rv" style="--d:.3s">
+        <iframe title="Furra Arti" loading="lazy"
+          src="https://maps.google.com/maps?q=Furra+Arti+Rruga+Ulqinit+Zhabar+Mitrovice+Kosovo&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
